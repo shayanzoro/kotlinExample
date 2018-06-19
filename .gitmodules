@@ -1,0 +1,3 @@
+[submodule "app/src/main/cpp/iputils"]
+	path = app/src/main/cpp/iputils
+	url = https://android.googlesource.com/platform/external/iputils
