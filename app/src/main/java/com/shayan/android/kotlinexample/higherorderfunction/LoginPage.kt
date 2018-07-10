@@ -17,6 +17,7 @@ class LoginPage : AppCompatActivity()
 
     fun initViews()
     {
+        // Here we pass 2 functions for the case of success or failure
         checkInternetQuality({
             // Good internet connection
             enableLoginButton()
