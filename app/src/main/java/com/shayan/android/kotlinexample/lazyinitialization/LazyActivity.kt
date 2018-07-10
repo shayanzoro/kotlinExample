@@ -31,7 +31,7 @@ class LazyActivity : AppCompatActivity()
 
         // The initialization of helloTextView happens at this time
         helloTextView.setText(R.string.hello_world)
-        // The initialization of helloTextView happens at this time
+        // The initialization of appNameTextView happens at this time
         appNameTextView.setText(R.string.app_name)
     }
 }
