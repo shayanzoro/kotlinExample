@@ -6,7 +6,7 @@ import android.widget.TextView
 import com.shayan.android.kotlinexample.R
 
 /**
- * Example of lazy initialization with delegated property
+ * Example of lazy initialization and delegated property
  * Inspired by https://medium.com/til-kotlin/how-kotlins-delegated-properties-and-lazy-initialization-work-552cbad8be60
  */
 class LazyActivity : AppCompatActivity()
@@ -18,6 +18,11 @@ class LazyActivity : AppCompatActivity()
         findViewById<TextView>(R.id.tv_hello)
     }
 
+    // This is the custom implementation of lazy initialization by defining a delegated property
+    private val appNameTextView: TextView by CustomLazyImpl {
+        findViewById<TextView>(R.id.tv_app_name)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
@@ -25,5 +30,7 @@ class LazyActivity : AppCompatActivity()
 
         // The initialization of helloTextView happens at this time
         helloTextView.setText(R.string.hello_world)
+        // The initialization of helloTextView happens at this time
+        appNameTextView.setText(R.string.app_name)
     }
 }
