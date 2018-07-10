@@ -8,6 +8,7 @@ import com.shayan.android.kotlinexample.R
 /**
  * Example of lazy initialization and delegated property
  * Inspired by https://medium.com/til-kotlin/how-kotlins-delegated-properties-and-lazy-initialization-work-552cbad8be60
+ * and https://medium.com/rocket-fuel/kotlin-by-property-delegation-create-reusable-code-f2bc2253e227
  */
 class LazyActivity : AppCompatActivity()
 {
